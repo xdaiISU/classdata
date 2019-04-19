@@ -13,3 +13,7 @@ If \code{lat} and \code{lon} are scalars (length 1), then a vector for the Carte
 lat A vector containing the latitudes
 lon A vector containing the corresponding longitudes
 }
+\examples{
+# Get the Cartesian coordinates for Ames, IA
+LatLon2Sp(93.6319, 42.0308)
+}
