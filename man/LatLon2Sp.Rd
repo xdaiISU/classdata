@@ -15,5 +15,5 @@ lon A vector containing the corresponding longitudes
 }
 \examples{
 # Get the Cartesian coordinates for Ames, IA
-LatLon2Sp(93.6319, 42.0308)
+LatLon2Sp(42.0308, -93.6319)
 }

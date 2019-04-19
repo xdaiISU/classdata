@@ -6,7 +6,7 @@
 #' @return If `lat` and `lon` are scalars (length 1), then a vector for the Cartesian coordinate. If `lat` and `lon` have length n >= 1, then return a data frame with n rows and three columns names 'x', 'y', and 'z'
 #' @examples
 #' # Get the Cartesian coordinates for Ames, IA
-#' LatLon2Sp(93.6319, 42.0308)
+#' LatLon2Sp(42.0308, -93.6319)
 #' @export
 #' 
 LatLon2Sp <- function(lat, lon) {
