@@ -2,7 +2,7 @@ Package: classdata
 Version: 0.0.1
 Title: Data Used in Course Work
 Description: Data sets used for work in some of my ISU classes.
-Authors@R: c(person("Heike", "Hofmann", email="hofmann@iastate.edu", role=c("aut", "cre"))
+Authors@R: c(person("Heike", "Hofmann", email="hofmann@iastate.edu", role=c("aut", "cre")), 
         person("Xiongtao", "Dai", email="xdai@iastate.edu", role=c("aut")))
 Depends:
     R (>= 3.1)
