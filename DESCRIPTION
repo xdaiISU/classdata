@@ -8,8 +8,6 @@ Depends:
     R (>= 3.1)
 License: GPL-2 | file LICENSE
 LazyData: true
-Collate: 
-    'data.R'
 VignetteBuilder: knitr
 RoxygenNote: 6.1.0
 Roxygen: list(markdown = TRUE)
