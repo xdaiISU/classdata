@@ -7,6 +7,7 @@ Authors@R:
     person("Xiongtao", "Dai", email="xdai@iastate.edu", role=c("aut"))
 Depends:
     R (>= 3.1)
+Maintainer: Xiongtao Dai <xdai@iastate.edu>
 License: GPL-2 | file LICENSE
 LazyData: true
 Collate: 
