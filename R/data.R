@@ -186,3 +186,27 @@
 #' @usage data(mojo)
 #' @format A data frame with 31718 rows and 15 variables.
 "mojo"
+
+#' Planet orbit trajectory
+#'
+#' The data contains the orbit trajectories of the 8 planets in the solar system. Both the solar ecliptic coordinates and the corresponding Cartesian coordinates are included
+#' Source: NASA, crawled on April 18, 2019 from 
+#' https://omniweb.gsfc.nasa.gov/coho/helios/planet.html
+#' @format A data frame with 216 rows and 9 variables:
+#' \describe{
+#'   \item{YYYY}{Year}
+#'   \item{DOY}{Day of Year}
+#'   \item{AU}{Distance of the planet from Sun in astronomical units (AU)}
+#'   \item{ELAT}{Ecliptic lonitude. c.f. https://omniweb.gsfc.nasa.gov/coho/helios/plan_des.html}
+#'   \item{ELON}{Ecliptic latitude.}
+#'   \item{planet}{Name of the planet.}
+#'   \item{x}{Cartesian x-coordinate. The unit is AU.}
+#'   \item{y}{Cartesian y-coordinate. The unit is AU.}
+#'   \item{z}{Cartesian z-coordinate. The unit is AU.}
+#' }
+#' @keywords datasets
+#' @name planets
+#' @usage data(planets)
+"planets"
+
+
