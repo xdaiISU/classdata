@@ -5,7 +5,7 @@
 #' Since 2014 the data is only made available as part of Excel tables at \url{https://ucr.fbi.gov/crime-in-the-u.s/}.
 #' The variables are as follows (more detail on the FBI website):
 #'
-#' @format A data frame with 23256 rows and 7 variables:
+#' @format A data frame with 23672 rows and 7 variables:
 #' \describe{
 #'   \item{State}{name of the state for which numbers are reported.}
 #'   \item{Abb}{two letter state abbreviation. }
@@ -23,7 +23,7 @@
 #' A dataset containing the number of property and violent crimes across the United States from 1960 to 2016. 
 #' The data was made available by the FBI in the Uniform Crime Reporting Statistics (UCR) at \url{https://www.ucrdatatool.gov/index.cfm}. The variables are as follows (more detail on the FBI website):
 #'
-#' @format A data frame with 2907 rows and 14 variables:
+#' @format A data frame with 5918 rows and 12 variables:
 #' \describe{
 #'   \item{State}{name of the state for which numbers are reported.}
 #'   \item{Abb}{two letter state abbreviation. }
@@ -67,29 +67,16 @@
 "cities"
 
 
-#' Passengers and crew on board the Titanic
-#'
-#' A dataset containing some demographics and survival of people on board the Titanic
-#' @format A data frame with 2201 rows and 4 variables:
-#' \describe{
-#'   \item{Class}{factor variable containing the class of a passenger (1st, 2nd, 3rd) or crew.}
-#'   \item{Sex}{Male/Female.}
-#'   \item{Age}{Child/Adult. This information is not very reliable, because it was inferred from boarding documents that did not state actual age in years.}
-#'   \item{Survived}{Yes/No.}
-#' }
-#' @keywords datasets
-"titanic"
-
-
 #' Data related to happiness from the general social survey.
 #'
 #' The data is a small sample of variables related to happiness from the
 #' general social survey (GSS). The GSS is a yearly cross-sectional survey of
-#' Americans, run since 1972. We combine data for 25 years to yield 51,020
+#' Americans, run since 1972. We combine data for more than 25 years to yield over 60 thousand
 #' observations, and of the over 5,000 variables, we select some variables that are related to
 #' happiness:
 #'
 #' \itemize{
+#'  \item year. year of the response, 1972 to 2018.
 #'  \item age. age in years: 18--89 (89 stands for all 89 year olds and older).
 #'  \item degree. highest education: lt high school, high school, junior
 #'     college, bachelor, graduate.
@@ -101,7 +88,7 @@
 #'  \item sex. sex: female, male.
 #'  \item polviews. from extremely conservative to extremely liberal.
 #'  \item partyid. party identification: strong republican, not str republican, ind near rep, independent, ind near dem, not str democrat, strong democrat, other party.
-#'  \item wtsall. probability weight. 0.39--8.74
+#'  \item wtssall. probability weight. 0.39--8.74
 #' }
 #'
 #' @keywords datasets
@@ -110,16 +97,15 @@
 #' @format A data frame with 62466 rows and 11 variables
 "happy"
 
-
 #' Box office data
 #'
 #' The data contains weekly box office numbers as published on the website 
 #' https://www.the-numbers.com/weekly-box-office-chart scraped on 
-#' Sep 2 2018.
+#' Oct 16 2019.
 #'
 #' \itemize{
 #'  \item Rank current rank of the movie according to gross box office
-#'  \item Rank.last.Week last week's ranking of box office gross
+#'  \item Rank.Last.Week last week's ranking of box office gross
 #'  \item Movie name of the movie
 #'  \item Distributor name of the Distributor
 #'  \item Gross weekly box office gross in US dollars 
@@ -127,13 +113,14 @@
 #'  \item Thtrs. number of movie theaters the movie is being shown
 #'  \item Per.Thr. per theater gross
 #'  \item Total.Gross cumulative box office gross in 100 million US dollars 
+#'  \item Week number of weeks a movie has been shown
 #'  \item Date date of the publication of box office numbers
 #' }
 #'
 #' @keywords datasets
 #' @name box
 #' @usage data(box)
-#' @format A data frame with 27594 rows and 11 variables
+#' @format A data frame with 32885 rows and 11 variables
 "box"
 
 
@@ -153,7 +140,7 @@
 #' @keywords datasets
 #' @name budget
 #' @usage data(budget)
-#' @format A data frame with 5524 rows and 5 variables
+#' @format A data frame with 5855 rows and 5 variables
 "budget"
 
 
@@ -208,5 +195,54 @@
 #' @name planets
 #' @usage data(planets)
 "planets"
+
+
+#' Passengers and crew on board the Titanic
+#'
+#' A dataset containing some demographics and survival of people on board the Titanic
+#' @format A data frame with 2201 rows and 4 variables:
+#' \describe{
+#'   \item{Class}{factor variable containing the class of a passenger (1st, 2nd, 3rd) or crew.}
+#'   \item{Sex}{Male/Female.}
+#'   \item{Age}{Child/Adult. This information is not very reliable, because it was inferred from boarding documents that did not state actual age in years.}
+#'   \item{Survived}{Yes/No.}
+#' }
+#' @keywords datasets
+"titanic"
+
+#' Earthquake data
+#'
+#' The USGS monitors and reports earthquakes and earthquake-like events in almost real-time at https://www.usgs.gov/natural-hazards/earthquake-hazards. 
+#' For more information on the variables see https://earthquake.usgs.gov/data/comcat/data-eventterms.php
+#' 
+#' \itemize{
+#'  \item time date and time of the event in UTC
+#'  \item latitude geographic latitude
+#'  \item longitude geographic longitude
+#'  \item depth approximate depth of the event
+#'  \item mag magnitude of the event 
+#'  \item magType method or algorithm used to calculate magnitude 
+#'  \item nst total number of seismic stations used to determine earthquake location.
+#'  \item gap largest azimuthal gap between azimuthally adjacent stations (in degrees). In general, the smaller this number, the more reliable is the calculated horizontal position of the earthquake.
+#'  \item dmin Horizontal distance from the epicenter to the nearest station (in degrees). 1 degree is approximately 111.2 kilometers. In general, the smaller this number, the more reliable is the calculated depth of the earthquake.
+#'  \item rms Horizontal distance from the epicenter to the nearest station (in degrees). 1 degree is approximately 111.2 kilometers. In general, the smaller this number, the more reliable is the calculated depth of the earthquake.
+#'  \item net ID of a data contributor.
+#'  \item id unique identifier for the event
+#'  \item updated time when the event was most recently updated
+#'  \item place named geographic region near to the event
+#'  \item type type of seismic event.
+#'  \item horizontalError uncertainty of reported location of the event in kilometers.
+#'  \item depthError uncertainty of reported depth of the event in kilometers.
+#'  \item magError uncertainty of reported magnitude of the event.
+#'  \item magNst  total number of seismic stations used to calculate the magnitude for this earthquake.
+#'  \item locationSource network that originally authored the reported location of this event.
+#'  \item magSource network that originally authored the reported magnitude for this event.
+#' }
+#'
+#' @keywords datasets
+#' @name earthquakes
+#' @usage data(earthquakes)
+#' @format A data frame with 22 variables
+"earthquakes"
 
 
