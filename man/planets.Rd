@@ -4,7 +4,8 @@
 \name{planets}
 \alias{planets}
 \title{Planet orbit trajectory}
-\format{A data frame with 216 rows and 9 variables:
+\format{
+A data frame with 216 rows and 9 variables:
 \describe{
 \item{YYYY}{Year}
 \item{DOY}{Day of Year}
@@ -15,7 +16,8 @@
 \item{x}{Cartesian x-coordinate. The unit is AU.}
 \item{y}{Cartesian y-coordinate. The unit is AU.}
 \item{z}{Cartesian z-coordinate. The unit is AU.}
-}}
+}
+}
 \usage{
 data(planets)
 }

@@ -1,6 +1,6 @@
 #' Numbers of crimes by state
 #'
-#' A dataset containing the number of property and violent crimes across the United States from 1960 to 2017. 
+#' A dataset containing the number of property and violent crimes across the United States from 1960 to 2018. 
 #' The data  from 1960 to 2014 was made available by the FBI in the Uniform Crime Reporting Statistics (UCR) at \url{https://www.ucrdatatool.gov/index.cfm}. 
 #' Since 2014 the data is only made available as part of Excel tables at \url{https://ucr.fbi.gov/crime-in-the-u.s/}.
 #' The variables are as follows (more detail on the FBI website):
@@ -20,7 +20,7 @@
 
 #' Numbers of crimes by state
 #'
-#' A dataset containing the number of property and violent crimes across the United States from 1960 to 2016. 
+#' A dataset containing the number of property and violent crimes across the United States from 1960 to 2018. 
 #' The data was made available by the FBI in the Uniform Crime Reporting Statistics (UCR) at \url{https://www.ucrdatatool.gov/index.cfm}. The variables are as follows (more detail on the FBI website):
 #'
 #' @format A data frame with 5918 rows and 12 variables:
@@ -101,7 +101,7 @@
 #'
 #' The data contains weekly box office numbers as published on the website 
 #' https://www.the-numbers.com/weekly-box-office-chart scraped on 
-#' Oct 16 2019.
+#' March 15 2020.
 #'
 #' \itemize{
 #'  \item Rank current rank of the movie according to gross box office
@@ -120,13 +120,13 @@
 #' @keywords datasets
 #' @name box
 #' @usage data(box)
-#' @format A data frame with 32885 rows and 11 variables
+#' @format A data frame with 15227 rows and 12 variables
 "box"
 
 
 #' Movie budget data
 #'
-#' The data contains movie budgets and box office gross for the 5000 top grossing movies (as of May 13 2018) published 
+#' The data contains movie budgets and box office gross for the 5000 top grossing movies (as of Mar 15 2020) published 
 #' on https://www.the-numbers.com/movie/budgets/all/1
 #'
 #' \itemize{
@@ -140,7 +140,7 @@
 #' @keywords datasets
 #' @name budget
 #' @usage data(budget)
-#' @format A data frame with 5855 rows and 5 variables
+#' @format A data frame with 6027 rows and 5 variables
 "budget"
 
 

@@ -4,7 +4,9 @@
 \name{happy}
 \alias{happy}
 \title{Data related to happiness from the general social survey.}
-\format{A data frame with 62466 rows and 11 variables}
+\format{
+A data frame with 62466 rows and 11 variables
+}
 \usage{
 data(happy)
 }

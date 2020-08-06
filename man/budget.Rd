@@ -4,12 +4,14 @@
 \name{budget}
 \alias{budget}
 \title{Movie budget data}
-\format{A data frame with 5855 rows and 5 variables}
+\format{
+A data frame with 6027 rows and 5 variables
+}
 \usage{
 data(budget)
 }
 \description{
-The data contains movie budgets and box office gross for the 5000 top grossing movies (as of May 13 2018) published
+The data contains movie budgets and box office gross for the 5000 top grossing movies (as of Mar 15 2020) published
 on https://www.the-numbers.com/movie/budgets/all/1
 }
 \details{
