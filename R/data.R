@@ -23,7 +23,7 @@
 #' A dataset containing the number of property and violent crimes across the United States from 1960 to 2018. 
 #' The data was made available by the FBI in the Uniform Crime Reporting Statistics (UCR) at \url{https://www.ucrdatatool.gov/index.cfm}. The variables are as follows (more detail on the FBI website):
 #'
-#' @format A data frame with 5918 rows and 12 variables:
+#' @format A data frame with 2959 rows and 12 variables:
 #' \describe{
 #'   \item{State}{name of the state for which numbers are reported.}
 #'   \item{Abb}{two letter state abbreviation. }
@@ -40,6 +40,7 @@
 #' }
 #' @keywords datasets
 "fbiwide"
+
 
 #' Numbers of crimes by city
 #'
