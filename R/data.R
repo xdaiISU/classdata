@@ -247,3 +247,17 @@
 "earthquakes"
 
 
+#' Stock data
+#'
+#' Contains the daily stock price and trading volumes for Apple, Google, and a share that tracks the price of Bitcoin since the start of 2020.
+#' @format A data frame with 4 variables:
+#' \describe{
+#'   \item{date}{Date for the price record}
+#'   \item{symbol}{AAPL for Apple, GOOG for Google, and GBTC for Bitcoin}
+#'   \item{price}{The closing price in dollar}
+#'   \item{volume}{Trading volume}
+#' }
+#' @keywords datasets
+#' @name stock
+#' @usage data(stock)
+"stock"
